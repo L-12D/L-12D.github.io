@@ -1,0 +1,28 @@
+@import "defaults";
+@import "variables";
+
+// Webkit
+::-webkit-scrollbar {
+  width: $padding-8;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: $padding-8;
+}
+
+:hover::-webkit-scrollbar-thumb {
+  background: var(--gray-100);
+}
+
+// MS
+body {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+// Future
+.book-menu nav {
+  scrollbar-width: thin;
+  scrollbar-color: transparent var(--gray-100);
+}

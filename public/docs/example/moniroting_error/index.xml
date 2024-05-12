@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Неисправности Мониторинга on Printum</title>
+    <link>https://docs.printum.ru/docs/example/moniroting_error/</link>
+    <description>Recent content in Неисправности Мониторинга on Printum</description>
+    <generator>Hugo</generator>
+    <language>ru</language>
+    <atom:link href="https://docs.printum.ru/docs/example/moniroting_error/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ошибки установки Мониторинга</title>
+      <link>https://docs.printum.ru/docs/example/moniroting_error/installmonitoring_error/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.printum.ru/docs/example/moniroting_error/installmonitoring_error/</guid>
+      <description>Ошибки установки Мониторинга # E: Невозможно исправить ошибки: У вас зафиксированы сломанные пакеты. # Вероятно, во время установки пакетов произошло прерывание установки, например, выключили сервер.&#xA;Для решения обратитесь к документации ОС. Если не помогло, удалите и установите пакеты вручную.&#xA;Ошибка “Timeout error. Check docker logs. Then restart the installation.” # Ошибка возникает, если неверно указана переменная MON_HOSTNAME.&#xA;Для решения, проверьте верность IP адреса или доменного имени указанного при установке. Укажите верные значения и запустите установку еще раз.</description>
+    </item>
+    <item>
+      <title>Ошибки обновления Мониторинга</title>
+      <link>https://docs.printum.ru/docs/example/moniroting_error/updatemonitoring_error/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.printum.ru/docs/example/moniroting_error/updatemonitoring_error/</guid>
+      <description>Ошибки обновления Мониторинга # error while removing network: network printum_defailt id &amp;lt;&amp;hellip;&amp;gt; has active endpoints # Означает, что невозможно удалить внутреннюю сеть docker, так как она занята запущенным контейнером. Для решения перезагрузите сервер и запустите обновление повторно.</description>
+    </item>
+    <item>
+      <title>Обнаружены не все печатающие устройства</title>
+      <link>https://docs.printum.ru/docs/example/moniroting_error/findprinter_error/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.printum.ru/docs/example/moniroting_error/findprinter_error/</guid>
+      <description>Обнаружены не все печатающие устройства # Проверьте, что IP-адрес принтера указан верно в настройках локации или входит в указанные диапазоны.&#xA;Для этого откройте панель администратора мониторинга, выберите Инвентаризация &amp;gt; Локации. Откройте нужную локацию и убедитесь, что нужный IP-адрес указан в поле “IP-адреса устройств” и не указан в поле “Исключить IP-адреса”.&#xA;Проверьте, что агент мониторинга опрашивает локацию с устройствами. Для этого перейдите во вкладку “Настройки” &amp;gt; “Общие настройки” &amp;gt; “Модули” и выберите вариант “Сетевой агент”.</description>
+    </item>
+    <item>
+      <title>Приложение printer.py для поиска устройств</title>
+      <link>https://docs.printum.ru/docs/example/moniroting_error/printerpy_readmu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.printum.ru/docs/example/moniroting_error/printerpy_readmu/</guid>
+      <description>Приложение printer.py для поиска устройств # Для работы на сервере требуется запросить у службы технической поддержки файл printer_scan.py. Перед использованием нужно установить библиотеку nmap и pandas.&#xA;Перенесите консольное приложение printer_scan.py на сервер в любое место.&#xA;Зайдите в Личный кабинет, в раздел “Устройства”.&#xA;Выберите необходимую вам локацию и нажмите кнопку “Excel”.&#xA;Полученный отчет переименуйте в “Devices.xlsx” и перенесите на сервер.&#xA;Из папки с приложением (из шага 1) введите команду python3 printer_scan.</description>
+    </item>
+  </channel>
+</rss>

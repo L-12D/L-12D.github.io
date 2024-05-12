@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ошибки установки Мониторинга # E: Невозможно исправить ошибки: У вас зафиксированы сломанные пакеты. # Вероятно, во время установки пакетов произошло прерывание установки, например, выключили сервер.
+Для решения обратитесь к документации ОС. Если не помогло, удалите и установите пакеты вручную.
+Ошибка “Timeout error. Check docker logs. Then restart the installation.” # Ошибка возникает, если неверно указана переменная MON_HOSTNAME.
+Для решения, проверьте верность IP адреса или доменного имени указанного при установке. Укажите верные значения и запустите установку еще раз.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://docs.printum.ru/docs/example/moniroting_error/installmonitoring_error/">
+  <meta property="og:site_name" content="Printum">
+  <meta property="og:title" content="Ошибки установки Мониторинга">
+  <meta property="og:description" content="Ошибки установки Мониторинга # E: Невозможно исправить ошибки: У вас зафиксированы сломанные пакеты. # Вероятно, во время установки пакетов произошло прерывание установки, например, выключили сервер.
+Для решения обратитесь к документации ОС. Если не помогло, удалите и установите пакеты вручную.
+Ошибка “Timeout error. Check docker logs. Then restart the installation.” # Ошибка возникает, если неверно указана переменная MON_HOSTNAME.
+Для решения, проверьте верность IP адреса или доменного имени указанного при установке. Укажите верные значения и запустите установку еще раз.">
+  <meta property="og:locale" content="ru">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+<title>Ошибки установки Мониторинга | Printum</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="https://docs.printum.ru/docs/example/moniroting_error/installmonitoring_error/">
+<link rel="stylesheet" href="/book.min.2449e27efd8b96261b8c56ebb429c968c418fc5c487454a5f910f447b8d1e258.css" integrity="sha256-JEnifv2LliYbjFbrtCnJaMQY/FxIdFSl&#43;RD0R7jR4lg=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.1be158bc369184c72bfbf1086ccfb05eb747055c3359d665e6ba5a731f01f625.js" integrity="sha256-G&#43;FYvDaRhMcr&#43;/EIbM&#43;wXrdHBVwzWdZl5rpacx8B9iU=" crossorigin="anonymous"></script>
+
+  
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><img src="/logo.png" alt="Logo" /><span>Printum</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/example/" class="">Устранение неисправностей</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4d0781b66359d673738b7b2661fa08cd" class="toggle" checked />
+    <label for="section-4d0781b66359d673738b7b2661fa08cd" class="flex justify-between">
+      <a role="button" class="">Неисправности Мониторинга</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/moniroting_error/installmonitoring_error/" class="active">Ошибки установки Мониторинга</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/moniroting_error/updatemonitoring_error/" class="">Ошибки обновления Мониторинга</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/moniroting_error/findprinter_error/" class="">Обнаружены не все печатающие устройства</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/moniroting_error/printerpy_readmu/" class="">Приложение printer.py для поиска устройств</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-67f0d09cf52c6dac6fe132cf3f2bcd4c" class="toggle"  />
+    <label for="section-67f0d09cf52c6dac6fe132cf3f2bcd4c" class="flex justify-between">
+      <a role="button" class="">Неисправности ПринтМененджера</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a02d6135ecd08317de0a80ec9ea73457" class="toggle"  />
+    <label for="section-a02d6135ecd08317de0a80ec9ea73457" class="flex justify-between">
+      <a role="button" class="">Проблемы с печатью</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-be04e7f62df587465c8b4e70776bbff2" class="toggle"  />
+    <label for="section-be04e7f62df587465c8b4e70776bbff2" class="flex justify-between">
+      <a role="button" class="">Ошибки среды</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-6ae33376e452a74791fea78f0ffdd281" class="toggle"  />
+    <label for="section-6ae33376e452a74791fea78f0ffdd281" class="flex justify-between">
+      <a role="button" class="">Ошибки устройств</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a0cd2534abde739aa88379e43ccee03b" class="toggle"  />
+    <label for="section-a0cd2534abde739aa88379e43ccee03b" class="flex justify-between">
+      <a role="button" class="">Неисправности клиента ПМ и бесклиентской печати</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f71b33f8bac52b70d99fd3a75dc8df9c" class="toggle"  />
+    <label for="section-f71b33f8bac52b70d99fd3a75dc8df9c" class="flex justify-between">
+      <a role="button" class="">Неисправности локального агента</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7c3c00d11ec0a5cf94402b30e7170cfa" class="toggle"  />
+    <label for="section-7c3c00d11ec0a5cf94402b30e7170cfa" class="flex justify-between">
+      <a role="button" class="">Неисправности отказоустойчивой конфигурации</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-94c4207d24e8d0ba4c88088f427a7b78" class="toggle"  />
+    <label for="section-94c4207d24e8d0ba4c88088f427a7b78" class="flex justify-between">
+      <a role="button" class="">Ошибки печати через офисные программы</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/support_request/" class="">Обращение в техническую поддержку</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Ошибки установки Мониторинга</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#e-невозможно-исправить-ошибки-у-вас-зафиксированы-сломанные-пакеты">E: Невозможно исправить ошибки: У вас зафиксированы сломанные пакеты.</a></li>
+    <li><a href="#ошибка-timeout-error-check-docker-logs-then-restart-the-installation">Ошибка “Timeout error. Check docker logs. Then restart the installation.”</a></li>
+    <li><a href="#конфликт-адресов-при-установке-системы">Конфликт адресов при установке системы</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="ошибки-установки-мониторинга">
+  Ошибки установки Мониторинга
+  <a class="anchor" href="#%d0%be%d1%88%d0%b8%d0%b1%d0%ba%d0%b8-%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%ba%d0%b8-%d0%bc%d0%be%d0%bd%d0%b8%d1%82%d0%be%d1%80%d0%b8%d0%bd%d0%b3%d0%b0">#</a>
+</h1>
+<h2 id="e-невозможно-исправить-ошибки-у-вас-зафиксированы-сломанные-пакеты">
+  E: Невозможно исправить ошибки: У вас зафиксированы сломанные пакеты.
+  <a class="anchor" href="#e-%d0%bd%d0%b5%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d0%be-%d0%b8%d1%81%d0%bf%d1%80%d0%b0%d0%b2%d0%b8%d1%82%d1%8c-%d0%be%d1%88%d0%b8%d0%b1%d0%ba%d0%b8-%d1%83-%d0%b2%d0%b0%d1%81-%d0%b7%d0%b0%d1%84%d0%b8%d0%ba%d1%81%d0%b8%d1%80%d0%be%d0%b2%d0%b0%d0%bd%d1%8b-%d1%81%d0%bb%d0%be%d0%bc%d0%b0%d0%bd%d0%bd%d1%8b%d0%b5-%d0%bf%d0%b0%d0%ba%d0%b5%d1%82%d1%8b">#</a>
+</h2>
+<p>Вероятно, во время установки пакетов произошло прерывание установки, например, выключили сервер.</p>
+<p>Для решения обратитесь к документации ОС. Если не помогло, удалите и установите пакеты вручную.</p>
+<h2 id="ошибка-timeout-error-check-docker-logs-then-restart-the-installation">
+  Ошибка “Timeout error. Check docker logs. Then restart the installation.”
+  <a class="anchor" href="#%d0%be%d1%88%d0%b8%d0%b1%d0%ba%d0%b0-timeout-error-check-docker-logs-then-restart-the-installation">#</a>
+</h2>
+<p>Ошибка возникает, если неверно указана переменная MON_HOSTNAME.</p>
+<p>Для решения, проверьте верность IP адреса или доменного имени указанного при установке. Укажите верные значения и запустите установку еще раз.</p>
+<h2 id="конфликт-адресов-при-установке-системы">
+  Конфликт адресов при установке системы
+  <a class="anchor" href="#%d0%ba%d0%be%d0%bd%d1%84%d0%bb%d0%b8%d0%ba%d1%82-%d0%b0%d0%b4%d1%80%d0%b5%d1%81%d0%be%d0%b2-%d0%bf%d1%80%d0%b8-%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%ba%d0%b5-%d1%81%d0%b8%d1%81%d1%82%d0%b5%d0%bc%d1%8b">#</a>
+</h2>
+<p>Если после установки системы произошел разрыв соединения и к серверу нельзя подключится, то возможно это конфликт адресов. Для функционирования системы используется внутренняя сеть docker c пулом адресов 10.28.32.0/26, если есть пересечение с вашей реальной локальной сетью, то выделите пул адресов для функционирования системы.</p>
+<p>Может произойти потеря связи с сервером по shh, если конфликт сетей обнаружен во время или после установки. Для решения проблемы, подключитесь к серверу через консоль гипервизора.</p>
+<p>Остановите все контейнеры</p>
+<p>Если установлен Мониторинг:</p>
+<pre><code>cd /opt/printum
+docker-compose down
+</code></pre>
+<p>Если установлен ПринтМененджер</p>
+<pre><code>cd /opt/printmanager/
+docker-compose down
+</code></pre>
+<p>Проверьте что существует файл daemon.json в директории /etc/docker/ и создайте, если его нет.
+Откройте файл с помощью редактора</p>
+<pre><code>$ sudo nano /etc/docker/daemon.json
+</code></pre>
+<p>И добавьте или отредактируйте следующие строчки:</p>
+<pre><code>{
+&quot;default-address-pools&quot;: [{
+    &quot;base&quot;: &quot;х.х.х.х/х&quot;,
+    &quot;size&quot;: 26
+}]
+}
+</code></pre>
+<p>Где:
+&ldquo;base&rdquo;: &ldquo;х.х.х.х/х&rdquo; — выделенный пул адресов.</p>
+<p>Перезапустите службу докера</p>
+<pre><code>$ sudo systemctl restart docker
+</code></pre>
+<p>Запустите докер-контейнеры:</p>
+<pre><code>cd /opt/printum
+docker-compose up -d
+cd /opt/printmanager
+docker-compose up -d
+</code></pre>
+<p>При запуске контейнеров может появиться ошибка:</p>
+<pre><code>Creating network &quot;printum_default&quot; with the default driver
+ERROR: could not find an available, non-overlapping IPv4 address pool among the defaults to assign to the network
+</code></pre>
+<p>Тогда вернитесь к шагу 3 и выберите другой диапазон адресов.</p>
+<p>Проверьте, что контейнеры получили нужные адреса командой:</p>
+<pre><code>sudo docker ps -q | sudo xargs -n 1 docker inspect -f '{{ .Name }}: {{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}'
+</code></pre>
+<p>Если о проблеме известно до установки системы, то выполните инструкцию игнорируя пункт 1 и 5.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#e-невозможно-исправить-ошибки-у-вас-зафиксированы-сломанные-пакеты">E: Невозможно исправить ошибки: У вас зафиксированы сломанные пакеты.</a></li>
+    <li><a href="#ошибка-timeout-error-check-docker-logs-then-restart-the-installation">Ошибка “Timeout error. Check docker logs. Then restart the installation.”</a></li>
+    <li><a href="#конфликт-адресов-при-установке-системы">Конфликт адресов при установке системы</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
