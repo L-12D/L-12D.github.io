@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Обнаружены не все печатающие устройства # Проверьте, что IP-адрес принтера указан верно в настройках локации или входит в указанные диапазоны.
+Для этого откройте панель администратора мониторинга, выберите Инвентаризация &gt; Локации. Откройте нужную локацию и убедитесь, что нужный IP-адрес указан в поле “IP-адреса устройств” и не указан в поле “Исключить IP-адреса”.
+Проверьте, что агент мониторинга опрашивает локацию с устройствами. Для этого перейдите во вкладку “Настройки” &gt; “Общие настройки” &gt; “Модули” и выберите вариант “Сетевой агент”.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://docs.printum.ru/docs/example/moniroting_error/findprinter_error/">
+  <meta property="og:site_name" content="Printum">
+  <meta property="og:title" content="Обнаружены не все печатающие устройства">
+  <meta property="og:description" content="Обнаружены не все печатающие устройства # Проверьте, что IP-адрес принтера указан верно в настройках локации или входит в указанные диапазоны.
+Для этого откройте панель администратора мониторинга, выберите Инвентаризация &gt; Локации. Откройте нужную локацию и убедитесь, что нужный IP-адрес указан в поле “IP-адреса устройств” и не указан в поле “Исключить IP-адреса”.
+Проверьте, что агент мониторинга опрашивает локацию с устройствами. Для этого перейдите во вкладку “Настройки” &gt; “Общие настройки” &gt; “Модули” и выберите вариант “Сетевой агент”.">
+  <meta property="og:locale" content="ru">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+<title>Обнаружены не все печатающие устройства | Printum</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="https://docs.printum.ru/docs/example/moniroting_error/findprinter_error/">
+<link rel="stylesheet" href="/book.min.2449e27efd8b96261b8c56ebb429c968c418fc5c487454a5f910f447b8d1e258.css" integrity="sha256-JEnifv2LliYbjFbrtCnJaMQY/FxIdFSl&#43;RD0R7jR4lg=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.1be158bc369184c72bfbf1086ccfb05eb747055c3359d665e6ba5a731f01f625.js" integrity="sha256-G&#43;FYvDaRhMcr&#43;/EIbM&#43;wXrdHBVwzWdZl5rpacx8B9iU=" crossorigin="anonymous"></script>
+
+  
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><img src="/logo.png" alt="Logo" /><span>Printum</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/example/" class="">Устранение неисправностей</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4d0781b66359d673738b7b2661fa08cd" class="toggle" checked />
+    <label for="section-4d0781b66359d673738b7b2661fa08cd" class="flex justify-between">
+      <a role="button" class="">Неисправности Мониторинга</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/moniroting_error/installmonitoring_error/" class="">Ошибки установки Мониторинга</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/moniroting_error/updatemonitoring_error/" class="">Ошибки обновления Мониторинга</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/moniroting_error/findprinter_error/" class="active">Обнаружены не все печатающие устройства</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/moniroting_error/printerpy_readmu/" class="">Приложение printer.py для поиска устройств</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-67f0d09cf52c6dac6fe132cf3f2bcd4c" class="toggle"  />
+    <label for="section-67f0d09cf52c6dac6fe132cf3f2bcd4c" class="flex justify-between">
+      <a role="button" class="">Неисправности ПринтМененджера</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a02d6135ecd08317de0a80ec9ea73457" class="toggle"  />
+    <label for="section-a02d6135ecd08317de0a80ec9ea73457" class="flex justify-between">
+      <a role="button" class="">Проблемы с печатью</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-be04e7f62df587465c8b4e70776bbff2" class="toggle"  />
+    <label for="section-be04e7f62df587465c8b4e70776bbff2" class="flex justify-between">
+      <a role="button" class="">Ошибки среды</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-6ae33376e452a74791fea78f0ffdd281" class="toggle"  />
+    <label for="section-6ae33376e452a74791fea78f0ffdd281" class="flex justify-between">
+      <a role="button" class="">Ошибки устройств</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a0cd2534abde739aa88379e43ccee03b" class="toggle"  />
+    <label for="section-a0cd2534abde739aa88379e43ccee03b" class="flex justify-between">
+      <a role="button" class="">Неисправности клиента ПМ и бесклиентской печати</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f71b33f8bac52b70d99fd3a75dc8df9c" class="toggle"  />
+    <label for="section-f71b33f8bac52b70d99fd3a75dc8df9c" class="flex justify-between">
+      <a role="button" class="">Неисправности локального агента</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7c3c00d11ec0a5cf94402b30e7170cfa" class="toggle"  />
+    <label for="section-7c3c00d11ec0a5cf94402b30e7170cfa" class="flex justify-between">
+      <a role="button" class="">Неисправности отказоустойчивой конфигурации</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-94c4207d24e8d0ba4c88088f427a7b78" class="toggle"  />
+    <label for="section-94c4207d24e8d0ba4c88088f427a7b78" class="flex justify-between">
+      <a role="button" class="">Ошибки печати через офисные программы</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/example/support_request/" class="">Обращение в техническую поддержку</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Обнаружены не все печатающие устройства</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents"></nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="обнаружены-не-все-печатающие-устройства">
+  Обнаружены не все печатающие устройства
+  <a class="anchor" href="#%d0%be%d0%b1%d0%bd%d0%b0%d1%80%d1%83%d0%b6%d0%b5%d0%bd%d1%8b-%d0%bd%d0%b5-%d0%b2%d1%81%d0%b5-%d0%bf%d0%b5%d1%87%d0%b0%d1%82%d0%b0%d1%8e%d1%89%d0%b8%d0%b5-%d1%83%d1%81%d1%82%d1%80%d0%be%d0%b9%d1%81%d1%82%d0%b2%d0%b0">#</a>
+</h1>
+<ul>
+<li>
+<p>Проверьте, что IP-адрес принтера указан верно в настройках локации или входит в указанные диапазоны.</p>
+<p>Для этого откройте панель администратора мониторинга, выберите Инвентаризация &gt; Локации. Откройте нужную локацию и убедитесь, что нужный IP-адрес указан в поле “IP-адреса устройств” и не указан в поле “Исключить IP-адреса”.</p>
+</li>
+<li>
+<p>Проверьте, что агент мониторинга опрашивает локацию с устройствами.
+Для этого перейдите во вкладку “Настройки” &gt; “Общие настройки” &gt; “Модули” и выберите вариант “Сетевой агент”.</p>
+<p>Локация с устройствами должна быть отмечена чек-боксом или входить в другую локацию, отмеченную чек-боксом.</p>
+</li>
+<li>
+<p>Проверьте доступность принтера по его ip-адресу в сети.
+Для этого на ПК, находящемся в одной сети с принтером, откройте браузер и укажите в адресной строке ip-адрес принтера.</p>
+</li>
+<li>
+<p>Если принтер отвечает по указанному в настройках локации ip-адресу, проверьте, включена ли на принтере передача данных по протоколу SNMP.</p>
+<p>Если нет, необходимо включить.</p>
+<p>Проверьте, отвечают ли принтеры на запросы и отдают ли информацию по snmpwalk по командам:</p>
+<pre><code>  snmpwalk -v 2c -c public printer-ip-address
+</code></pre>
+<p>или</p>
+<pre><code>  snmpwalk -v 1 -c public printer-ip-address
+</code></pre>
+<p>Если принтеры не отвечают на команды, следует откорректировать настройки принтеров и включить передачу данных по протоколу SNMP.</p>
+</li>
+<li>
+<p>Если нужный ip-адрес указан в настройках локаций, принтер по нему отвечает и в настройках включена передача данных по протоколу SNMP, вероятно, потребуется настройка SNMP параметров для данной модели. Сделайте необходимые настройки или обратитесь в техническую поддержку.</p>
+<p>При обращении в техподдержку в запросе также укажите ошибки идентификации по этому устройству. Чтобы их посмотреть, перейдите в “Инвентаризация” &gt; “Устройства”, найдите нужное устройство, вбив ip-адрес в строку поиска, скопируйте данные из столбца “Ошибки идентификации”.</p>
+</li>
+<li>
+<p>Для случаев, когда устройств много и необходимо проверить на каких включена или выключена передача данных по SNMP есть консольная приложение printer.py. Инструкция по его использованию в разделе “Приложение printer.py для поиска устройств”.</p>
+</li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents"></nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
