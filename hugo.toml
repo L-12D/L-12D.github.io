@@ -1,0 +1,15 @@
+baseURL = 'https://docs.printum.ru/'
+languageCode = 'ru-RU'
+title = 'Printum'
+
+disablePathToLower = true
+# enableGitInfo = true
+
+[params]
+BookTheme = 'light' 
+BookLogo = 'logo.png'
+BookToC = true
+BookSearch = true
+# BookMenuBundle = '/menu'
+# BookSection = 'docs'
+# BookEditPath = 'edit/master/exampleSite'
